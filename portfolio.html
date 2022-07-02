@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -305,21 +305,23 @@
           </div>
 
           <!--newsletter form section -->
-          <div class="newsletter-form-footer">
-            <form name="newsletter_signup_form" autocomplete="on" novalidate>
+          <div class="newsletter-signup">
+            <form class="newsletter-signup__form" name="newsletter_signup_form" autocomplete="on" novalidate>
               <label>
                 <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
                 <input
-                  class="input-newsletter-mail"
+                  class="newsletter-signup__input"
                   type="email"
                   name="email"
                   placeholder="E-mail"
                 />
               </label>
 
-              <button type="submit">Zapisz się</button>
+              <button class="newsletter-signup__button" type="submit">Zapisz się</button>
             </form>
           </div>
+        </div>
+      </div>
         </div>
       </div>
     </footer>

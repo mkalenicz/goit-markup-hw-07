@@ -1,0 +1,38 @@
+/* banner component */
+.banner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: map-get($colors, "footerBackground");
+  background-image: url("../images/bannerImgOverlay.png"),
+    url("../images/bannerImg.jpg");
+  background-position: center, center;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  &__header {
+    @extend .bannerHeaderFont;
+    margin: 0 auto;
+    max-width: 696px;
+    flex-basis: 696px;
+  }
+
+  &__button {
+    @extend .buttonFont;
+    border-radius: 4px;
+    text-align: center;
+    background-color: map-get($colors, "accent");
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  &__btn_wrapper {
+    flex-basis: 200px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
